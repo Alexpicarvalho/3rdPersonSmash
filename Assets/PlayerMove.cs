@@ -12,7 +12,6 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float _airSpeed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private int _maxJumps;
-    private Rigidbody _rb;
     private int _currentJumpIndex = 0;
     Vector3 _moveDirection;
 
@@ -20,7 +19,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float _raycastDistance;
     bool _grounded;
 
+    [Header("References")]
     private Animator _anim;
+    private Rigidbody _rb;
 
     // Start is called before the first frame update
     void Start()
@@ -36,18 +37,25 @@ public class PlayerMove : MonoBehaviour
         float zMov = Input.GetAxis("Vertical");
 
         _moveDirection = new Vector3(xMov, 0.0f, zMov).normalized;
-        transform.rotation = Quaternion.LookRotation(_moveDirection);
+        _anim.SetFloat("Movement", _moveDirection.magnitude, 0.1f, Time.deltaTime);
+
+        if(_moveDirection.magnitude > 0)
+        {
+            transform.rotation = Quaternion.LookRotation(_moveDirection);
+        }
+
+        
 
 
         CheckGrounded();
         if (Input.GetKeyDown(KeyCode.Space) && _currentJumpIndex < _maxJumps - 1)
         {
             Debug.Log("Current jump : " + _currentJumpIndex);
-            if (_currentJumpIndex > 0) _anim.SetTrigger("SecondJump");
+            _anim.SetTrigger("SecondJump");
             _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
             _currentJumpIndex++;
         }
-        //Debug.Log(_grounded);
+        Debug.Log(_grounded);
     }
 
     private void CheckGrounded()
@@ -70,7 +78,7 @@ public class PlayerMove : MonoBehaviour
     {
         if(_moveDirection.magnitude > 0)
         {
-            if(_grounded) _rb.MovePosition(transform.position +_speed * Time.deltaTime * _moveDirection);
+            if (_grounded) _rb.MovePosition(transform.position +_speed * Time.deltaTime * _moveDirection);
             else _rb.MovePosition(transform.position + _airSpeed * Time.deltaTime * _moveDirection);
         }
         
