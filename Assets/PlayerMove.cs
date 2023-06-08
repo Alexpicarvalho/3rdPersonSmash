@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMove : MonoBehaviour
@@ -15,19 +17,31 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody _rb;
     private int _currentJumpIndex = 0;
     Vector3 _moveDirection;
+    bool _canMove = true;
 
     [Header("Ground Checking")]
     [SerializeField] float _raycastDistance;
+    [SerializeField] float _jumpInputCooldown = .1f;
     bool _grounded;
+    float _timeSinceLastJump = 0;
+
+    [Header("Dodge Dash")]
+    [SerializeField] float _dodgeCooldown;
+    [SerializeField] float _dodgeSpeed;
+    [SerializeField] float _dodgeDuration;
+    [SerializeField] AnimationCurve _dodgeSpeedCurve;
+    float _timeSinceLastDodge = 0;
+    [SerializeField] string _dodgeLayerName;
 
     private Animator _anim;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Physics.gravity = Vector3.down * 20f;
         _rb = GetComponent<Rigidbody>();
-        _anim = GetComponent<Animator>();
+        _anim = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -35,30 +49,38 @@ public class PlayerMove : MonoBehaviour
         float xMov = Input.GetAxis("Horizontal");
         float zMov = Input.GetAxis("Vertical");
 
-        _moveDirection = new Vector3(xMov, 0.0f, zMov).normalized;
-        transform.rotation = Quaternion.LookRotation(_moveDirection);
+        if (_canMove)
+        {
+            _moveDirection = new Vector3(xMov, 0.0f, zMov).normalized;
+        }
 
+        transform.rotation = Quaternion.LookRotation(_moveDirection);
+        _timeSinceLastJump += Time.deltaTime;
+        _timeSinceLastDodge += Time.deltaTime;
 
         CheckGrounded();
-        if (Input.GetKeyDown(KeyCode.Space) && _currentJumpIndex < _maxJumps - 1)
+        if (Input.GetKeyDown(KeyCode.Space) && _timeSinceLastJump >= _jumpInputCooldown && _currentJumpIndex < _maxJumps - 1)
         {
+            _anim.SetTrigger("Jump");
             Debug.Log("Current jump : " + _currentJumpIndex);
-            if (_currentJumpIndex > 0) _anim.SetTrigger("SecondJump");
+            _rb.Sleep();
+            _rb.WakeUp();
             _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
             _currentJumpIndex++;
         }
+        if (Input.GetButtonDown("Fire2") && _timeSinceLastDodge >= _dodgeCooldown) StartCoroutine(Dodge());
         //Debug.Log(_grounded);
     }
 
     private void CheckGrounded()
     {
-        if(Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, _raycastDistance))
+        if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, _raycastDistance))
         {
-           Debug.Log(hit.collider.name);
+            //Debug.Log(hit.collider.name);
             _grounded = true;
             _currentJumpIndex = 0;
         }
-        else _grounded = false; 
+        else _grounded = false;
     }
 
     private void OnDrawGizmos()
@@ -68,12 +90,31 @@ public class PlayerMove : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(_moveDirection.magnitude > 0)
+        if (_moveDirection.magnitude > 0 && _canMove)
         {
-            if(_grounded) _rb.MovePosition(transform.position +_speed * Time.deltaTime * _moveDirection);
+            _anim.SetBool("Runing", true);
+            if (_grounded) _rb.MovePosition(transform.position + _speed * Time.deltaTime * _moveDirection);
             else _rb.MovePosition(transform.position + _airSpeed * Time.deltaTime * _moveDirection);
         }
-        
-        
+        else _anim.SetBool("Runing", false);
+    }
+
+    IEnumerator Dodge()
+    {
+        _canMove = false;
+        _timeSinceLastDodge = 0;
+        float startTime = Time.time;
+        _rb.useGravity = false;
+        _currentJumpIndex--;
+
+        while (Time.time < startTime + _dodgeDuration)
+        {
+            _rb.MovePosition(transform.position + (_dodgeSpeedCurve.Evaluate(Time.time - startTime) / _dodgeDuration) * _dodgeSpeed * Time.deltaTime * _moveDirection);
+            yield return null;
+        }
+
+        _rb.useGravity = true;
+        _canMove = true;
+
     }
 }
