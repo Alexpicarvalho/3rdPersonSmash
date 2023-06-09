@@ -29,7 +29,7 @@ public class DirectionalCombat : MonoBehaviour
 
     private void Awake()
     {
-        SetPossibleOutputDirection();
+        
     }
 
     private void SetPossibleOutputDirection()
@@ -43,6 +43,7 @@ public class DirectionalCombat : MonoBehaviour
 
     private void Update()
     {
+        SetPossibleOutputDirection();
         CalculateInputPosition();
         _swapCounter += Time.deltaTime;
 
