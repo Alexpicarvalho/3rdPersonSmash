@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e72ae75f87943bb4b9143711eef4bff7
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/README.txt
+  uploadId: 443669

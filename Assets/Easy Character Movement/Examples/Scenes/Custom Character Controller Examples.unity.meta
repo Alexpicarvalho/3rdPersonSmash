@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9cb07b91a0ea98641aa836845884d9e6
+timeCreated: 1492990208
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scenes/Custom Character Controller
+    Examples.unity
+  uploadId: 443669

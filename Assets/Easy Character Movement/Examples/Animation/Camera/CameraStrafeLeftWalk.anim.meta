@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 611145b7f4287b74cafc6119a9e3d578
+timeCreated: 1467076414
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Animation/Camera/CameraStrafeLeftWalk.anim
+  uploadId: 443669

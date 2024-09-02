@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a10cfad963acd3844b186d5e72af9e3e
+timeCreated: 1492573938
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Materials/Top Grid.mat
+  uploadId: 443669

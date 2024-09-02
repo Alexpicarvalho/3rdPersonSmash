@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 59f9f2a41783bed42b114add0c2dc45f
+timeCreated: 1466639612
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Animation/Camera/CameraIdle.anim
+  uploadId: 443669

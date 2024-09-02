@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7c04c2643f5a5284db1d004eea175ce5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Walkthrough/11 - Flying/Scripts/MyCharacterController.cs
+  uploadId: 443669

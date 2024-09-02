@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: aed133d91b29726498878d014564cc78
+timeCreated: 1493160279
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scripts/Controllers/DemoController.cs
+  uploadId: 443669

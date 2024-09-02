@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4ef7f3589b11e5749894d9f1b65ef549
+timeCreated: 1492993688
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scenes/Custom Agent Controller/NavMesh.asset
+  uploadId: 443669

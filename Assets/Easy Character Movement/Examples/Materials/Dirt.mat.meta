@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f5ea8bb1a5b9d7a40afedffbfdc74126
+timeCreated: 1492731772
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Materials/Dirt.mat
+  uploadId: 443669

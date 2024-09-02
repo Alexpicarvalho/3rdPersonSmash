@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 90cb8f8fac9637d409472ade0f8ae664
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Walkthrough/4 - Custom Rotation (tank
+    like rotation)/Scripts/MyCharacterController.cs
+  uploadId: 443669

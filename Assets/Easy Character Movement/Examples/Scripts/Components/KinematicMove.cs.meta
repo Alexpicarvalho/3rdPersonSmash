@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 71d26199296f15447b91d40881a419de
+timeCreated: 1492894376
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scripts/Components/KinematicMove.cs
+  uploadId: 443669

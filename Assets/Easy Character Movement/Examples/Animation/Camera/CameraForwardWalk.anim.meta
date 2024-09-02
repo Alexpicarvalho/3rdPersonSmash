@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c2a0f8aff3dfb74c874aac572b954a7
+timeCreated: 1466980156
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Animation/Camera/CameraForwardWalk.anim
+  uploadId: 443669

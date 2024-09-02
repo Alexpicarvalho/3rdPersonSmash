@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a558d8953cb23c54d968d8ce066381f0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Walkthrough/15 - Ladder Climbing/Scripts/MyCharacterController.cs
+  uploadId: 443669

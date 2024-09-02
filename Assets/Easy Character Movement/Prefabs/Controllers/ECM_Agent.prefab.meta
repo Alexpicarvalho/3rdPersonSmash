@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5b6a7b8bb512df8498ff3a483851e761
+timeCreated: 1569109618
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Prefabs/Controllers/ECM_Agent.prefab
+  uploadId: 443669

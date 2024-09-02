@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 59c6de19cbd3f0445854aac7899adb82
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Walkthrough/1 - Custom Character Controller/example_scene.unity
+  uploadId: 443669

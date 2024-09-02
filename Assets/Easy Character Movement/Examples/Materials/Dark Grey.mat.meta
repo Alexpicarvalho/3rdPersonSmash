@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c8c44b7995594640a01ad79d18b3eab
+timeCreated: 1492731772
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Materials/Dark Grey.mat
+  uploadId: 443669

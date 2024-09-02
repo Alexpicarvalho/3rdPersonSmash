@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ada129a6ae32eb94f84408cf1d5ad7ab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Walkthrough/12 - Swimming/Scripts/MyCharacterController.cs
+  uploadId: 443669

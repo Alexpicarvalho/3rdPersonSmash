@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 867b8d2eced67404186c5652491aa961
+timeCreated: 1569109627
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Prefabs/Controllers/ECM_FirstPerson.prefab
+  uploadId: 443669

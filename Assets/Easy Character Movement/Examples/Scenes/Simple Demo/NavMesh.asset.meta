@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e5515300205a65d489d818473f8cc217
+timeCreated: 1493009148
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scenes/Simple Demo/NavMesh.asset
+  uploadId: 443669

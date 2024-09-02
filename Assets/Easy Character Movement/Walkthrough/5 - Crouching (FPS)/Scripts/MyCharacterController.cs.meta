@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cf81207dcd45a8145bcee744d4f40789
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Walkthrough/5 - Crouching (FPS)/Scripts/MyCharacterController.cs
+  uploadId: 443669

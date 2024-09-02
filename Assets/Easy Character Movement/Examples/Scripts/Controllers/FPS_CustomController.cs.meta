@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 795a2593dd749af49b6767d0126d527e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scripts/Controllers/FPS_CustomController.cs
+  uploadId: 443669

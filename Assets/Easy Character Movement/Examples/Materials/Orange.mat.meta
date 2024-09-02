@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2dd5f02215454d841b6db36f90e2b81a
+timeCreated: 1492731772
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Materials/Orange.mat
+  uploadId: 443669

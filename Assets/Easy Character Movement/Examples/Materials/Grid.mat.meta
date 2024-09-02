@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 646e1a57d56517545aac3ac82eaec24c
+timeCreated: 1492573938
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Materials/Grid.mat
+  uploadId: 443669

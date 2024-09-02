@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3c937bf463563f34590c841436549683
+timeCreated: 1492990741
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Scenes/Simple Demo.unity
+  uploadId: 443669

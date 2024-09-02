@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c734b943f52265b468a8bea4577fadc5
+timeCreated: 1492573938
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 57985
+  packageName: Easy Character Movement
+  packageVersion: 1.8.2
+  assetPath: Assets/Easy Character Movement/Examples/Materials/Cyan Grid.mat
+  uploadId: 443669
